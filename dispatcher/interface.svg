@@ -1,0 +1,187 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 20 335 110">
+  <style>
+    svg {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+    }
+
+    .track, #end {
+      stroke: #444;
+      stroke-width: 6;
+    }
+    #end {
+      stroke-width: .3;
+    }
+    .track-top {
+      display: none;
+    }
+    .track-top .track-background {
+      stroke: #000;
+      stroke-width: 10;
+    }
+
+    .signal .signal-foreground {
+      stroke: #444;
+      stroke-width: 2.4;
+    }
+    .signal.small .signal-foreground {
+      stroke-width: 1.3;
+    }
+    .signal .signal-background {
+      stroke: #000;
+      stroke-linecap: square;
+      stroke-width: 6;
+    }
+    .signal.small .signal-background {
+      stroke-width: 4;
+    }
+
+    .track-top.selected, .track-top.highlighted {
+      display: initial;
+    }
+    .track-top.selected .track, .signal.selected .signal-foreground {
+      stroke: #0a0;
+    }
+    .track-top.highlighted .track {
+      stroke: #777;
+    }
+    .track-top.selected.highlighted .track {
+      stroke: #484;
+    }
+  </style>
+  <defs>
+    <marker id="end" orient="auto" overflow="visible" refX="0" refY="0">
+      <path d="M0 1.13v-2.26"/>
+    </marker>
+  </defs>
+  <g fill="none">
+    <path class="track" id="WE-base" d="M45.38 121.83l23.31-23.31"/>
+    <path class="track" id="EE-base" d="M293.38 85.73h31.24"/>
+    <path class="track" id="DE-base" d="M292.22 59.11h32.4"/>
+    <path class="track" id="T1-base" d="M147.53 85.73h66.08"/>
+    <path class="track" id="T2-base" marker-start="url(#end)" d="M160.97 59.11h53.3"/>
+    <path class="track" id="T3-base" d="M212.77 32.49h-67.14"/>
+    <path class="track" id="T4-base" marker-start="url(#end)" d="M11 59.11h45.4"/>
+    <path class="track" id="T5-base" marker-end="url(#end)" d="M56.5 138.99H11" transform="translate(0 -106.5)"/>
+    <path class="track" oid="t1l" d="M81.48 85.73h66.41"/>
+    <path class="track" oid="t1r" d="M213.24 85.73h80.5"/>
+    <path class="track" oid="t2r" d="M214.49 59.11h77.66"/>
+    <path class="track" oid="t3l" d="M147.86 32.49H56.68"/>
+    <path class="track" oid="t3ld" d="M68.1 99.11l66.62-66.62"/>
+    <path class="track" oid="t3rd" d="M279.65 85.73L226.38 32.5h-12.64"/>
+    <path class="track" oid="t4r" d="M56.68 59.11h6.93l26.62-26.62"/>
+
+    <g id="WE" class="track-top selected">
+      <path class="track-background" id="we-bg" d="M45.38 121.83l23.31-23.31"/>
+      <path class="track" id="we-top" d="M45.38 121.83l23.31-23.31"/>
+    </g>
+    <g id="EE" class="track-top">
+      <path class="track-background" id="ee-bg" d="M293.38 85.73h31.24"/>
+      <path class="track" id="ee-top" d="M293.38 85.73h31.24"/>
+    </g>
+    <g id="DE" class="track-top selected">
+      <path class="track-background" id="de-bg" d="M292.22 59.11h32.4"/>
+      <path class="track" id="de-top" d="M292.22 59.11h32.4"/>
+    </g>
+    <g id="T1" class="track-top">
+      <path class="track-background" id="t1-bg" d="M147.53 85.73h66.08"/>
+      <path class="track" id="t1-top" d="M147.53 85.73h66.08"/>
+    </g>
+    <g id="T2" class="track-top">
+      <path class="track-background" id="t2-bg" d="M160.97 59.11h53.3"/>
+      <path class="track" id="t2-top" marker-start="url(#end)" d="M160.97 59.11h53.3"/>
+    </g>
+    <g id="T3" class="track-top selected">
+      <path class="track-background" id="t3-bg" d="M212.77 32.49h-67.14"/>
+      <path class="track" id="t3-top" d="M212.77 32.49h-67.14"/>
+    </g>
+    <g id="T4" class="track-top">
+      <path class="track-background" id="t4-bg" d="M11 59.11h45.4"/>
+      <path class="track" id="t4-top" marker-start="url(#end)" d="M11 59.11h45.4"/>
+    </g>
+    <g id="T5" class="track-top">
+      <path class="track-background" id="t5-bg" d="M56.5 138.99H11" transform="translate(0 -106.5)"/>
+      <path class="track" id="t5-top" marker-end="url(#end)" d="M56.5 138.99H11" transform="translate(0 -106.5)"/>
+    </g>
+    <g id="X1" class="track-top selected">
+      <path class="track-background" id="t3-we-bg" d="M68.1 99.11l66.62-66.62h11.6"/>
+      <path class="track" id="t3-we-top" d="M68.1 99.11l66.62-66.62h11.6"/>
+    </g>
+    <g id="X2" class="track-top">
+      <path class="track-background" id="t1-we-bg" d="M68.1 99.11l13.38-13.38h66.41"/>
+      <path class="track" id="t1-we-top" d="M68.1 99.11l13.38-13.38h66.41"/>
+    </g>
+    <g id="X3" class="track-top">
+      <path class="track-background" id="t1-ee-bg" d="M213.24 85.73h80.5"/>
+      <path class="track" id="t1-ee-top" d="M213.24 85.73h80.5"/>
+    </g>
+    <g id="X4" class="track-top">
+      <path class="track-background" id="t2-ee-bg" d="M214.27 59.11h38.75l26.62 26.62h13.46"/>
+      <path class="track" id="t2-ee-top" d="M214.27 59.11h38.75l26.62 26.62h13.46"/>
+    </g>
+    <g id="X5" class="track-top">
+      <path class="track-background" id="t3-ee-bg" d="M293.75 85.73h-14.1L226.38 32.5h-12.64"/>
+      <path class="track" id="t3-ee-top" d="M293.75 85.73h-14.1L226.38 32.5h-12.64"/>
+    </g>
+    <g id="X6" class="track-top">
+      <path class="track-background" id="t3-t5-bg" d="M214.49 59.11h77.66"/>
+      <path class="track" id="t3-t5-top" d="M214.49 59.11h77.66"/>
+    </g>
+    <g id="X7" class="track-top selected">
+      <path class="track-background" id="t3-de-bg" d="M292.22 59.11h-39.2l-26.63-26.62h-12.64"/>
+      <path class="track" id="t3-de-top" d="M292.22 59.11h-39.2l-26.63-26.62h-12.64"/>
+    </g>
+    <g id="X8" class="track-top">
+      <path class="track-background" id="t3-t4-bg" d="M56.68 59.11h6.93l26.62-26.62h56.1"/>
+      <path class="track" id="t3-t4-top" d="M56.68 59.11h6.93l26.62-26.62h56.1"/>
+    </g>
+    <g id="X9" class="track-top">
+      <path class="track-background" id="t2-de-bg" d="M147.86 32.49H56.68"/>
+      <path class="track" id="t2-de-top" d="M147.86 32.49H56.68"/>
+    </g>
+
+    <g id="S-WE" class="signal selected">
+      <path class="signal-background" d="M69.17 104.53v-6.42h-6.42"/>
+      <path class="signal-foreground" d="M69.17 108.82V98.1h-10.7"/>
+    </g>
+    <g id="S-EE" class="signal">
+      <path class="signal-background" d="M295.75 90.27l-4.54-4.55 4.54-4.54"/>
+      <path class="signal-foreground" d="M298.78 93.3l-7.57-7.58 7.57-7.57"/>
+    </g>
+    <g id="S-DE" class="signal small">
+      <path class="signal-background" d="M295.75 63.61l-4.5-4.5 4.5-4.5"/>
+      <path class="signal-foreground" d="M295.75 63.61l-4.5-4.5 4.5-4.5"/>
+    </g>
+    <g id="S-T1W" class="signal">
+      <path class="signal-background" d="M150.1 90.29l-4.55-4.54 4.54-4.55"/>
+      <path class="signal-foreground" d="M153.12 93.32l-7.57-7.57 7.57-7.58"/>
+    </g>
+    <g id="S-T1E" class="signal">
+      <path class="signal-background" d="M211.26 90.29l4.55-4.54-4.55-4.55"/>
+      <path class="signal-foreground" d="M208.23 93.32l7.58-7.57-7.58-7.58"/>
+    </g>
+    <g id="S-T2" class="signal">
+      <path class="signal-background" d="M211.26 63.63l4.55-4.54-4.55-4.54"/>
+      <path class="signal-foreground" d="M208.23 66.66l7.58-7.57-7.58-7.57"/>
+    </g>
+    <g id="S-T3W" class="signal">
+      <path class="signal-background" d="M150.1 36.98l-4.55-4.54 4.54-4.55"/>
+      <path class="signal-foreground" d="M153.12 40l-7.57-7.56 7.57-7.58"/>
+    </g>
+    <g id="S-T3E" class="signal selected">
+      <path class="signal-background" d="M211.26 36.98l4.55-4.54-4.55-4.55"/>
+      <path class="signal-foreground" d="M208.23 40l7.58-7.56-7.58-7.58"/>
+    </g>
+    <g id="S-T4" class="signal small">
+      <path class="signal-background" d="M53.7 54.68l4.5 4.5-4.5 4.5"/>
+      <path class="signal-foreground" d="M53.7 54.68l4.5 4.5-4.5 4.5"/>
+    </g>
+    <g id="S-T5" class="signal small">
+      <path class="signal-background" d="M53.7 27.93l4.5 4.5-4.5 4.5"/>
+      <path class="signal-foreground" d="M53.7 27.93l4.5 4.5-4.5 4.5"/>
+    </g>
+  </g>
+</svg>

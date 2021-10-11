@@ -1,0 +1,14 @@
+{
+  "name": "kitasanriku-project",
+  "private": true,
+  "author": "Kate Miháliková <kate@katemihalikova.cz>",
+  "license": "Parity-7.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katemihalikova/kitasanriku-project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/katemihalikova/kitasanriku-project/issues"
+  },
+  "homepage": "https://github.com/katemihalikova/kitasanriku-project#readme"
+}
